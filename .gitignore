@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+
+# Data and model artifacts (keep lightweight repo)
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/events.sample.csv
+
+data/processed/*
+!data/processed/.gitkeep
+
+outputs/runs/*
+!outputs/runs/.gitkeep
+
+# Dash caches / local files
+.dash*
+
+# Notebook / editor
+.ipynb_checkpoints/
+.DS_Store

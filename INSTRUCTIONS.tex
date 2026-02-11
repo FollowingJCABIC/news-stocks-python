@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\title{News + Stocks Dashboard: Setup Instructions}
+\author{}
+\date{February 5, 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Overview}
+This document describes how to run the Streamlit-based ``News + Stocks'' dashboard and how to obtain API keys for the default data providers.
+
+\section*{Prerequisites}
+\begin{itemize}
+  \item Python 3.9+ installed.
+  \item Dependencies installed with \texttt{pip install -r requirements.txt}.
+\end{itemize}
+
+\section*{Getting API Keys}
+\begin{itemize}
+  \item \textbf{NewsAPI}: Create an account and obtain a development API key. NewsAPI uses API keys for authentication and provides free keys for development use.\cite{newsapi-auth}
+  \item \textbf{Alpha Vantage}: Claim a free API key from the Alpha Vantage support page.\cite{alphavantage-support}
+\end{itemize}
+
+\section*{Daily Scripture}
+The app can display a daily verse using the free Bible API. It uses the random verse endpoint under the parameterized API and passes a translation identifier (e.g., \texttt{web}, \texttt{kjv}).\cite{bible-api}
+
+\section*{Music Playback}
+The music panel accepts direct audio URLs (MP3). The default demo track uses a SoundHelix MP3 sample and can be replaced with your own audio.\cite{soundhelix-audio}
+
+\section*{Running the App}
+From the project directory, run the app using Streamlit:
+\begin{verbatim}
+streamlit run app.py
+\end{verbatim}
+Streamlit runs the script and opens the app in a local browser tab.\cite{streamlit-run}
+
+\section*{Demo Mode (No Keys)}
+The app includes a ``Demo mode'' toggle in the sidebar. When enabled, it shows built-in sample headlines and quotes so you can verify the layout and interaction without API keys.
+
+\section*{Notes on Data Access}
+Access to premium sources (e.g., Reuters, AP, FT, WSJ) depends on your provider plan and licensing agreements. The app’s source list can be adjusted once you choose a provider.
+
+\begin{thebibliography}{9}
+\bibitem{newsapi-auth}
+NewsAPI. ``Authentication.''\
+\url{https://newsapi.org/docs/authentication}. Accessed February 5, 2026.
+
+\bibitem{alphavantage-support}
+Alpha Vantage. ``Customer Support (Claim your free API key).''\
+\url{https://www.alphavantage.co/support/}. Accessed February 5, 2026.
+
+\bibitem{streamlit-run}
+Streamlit Docs. ``Run your Streamlit app.''\
+\url{https://docs.streamlit.io/develop/concepts/architecture/run-your-app}. Accessed February 5, 2026.
+
+\bibitem{bible-api}
+Bible API. ``Random Verse'' endpoint in the parameterized API (\texttt{/data/TRANSLATION\_ID/random}).\
+\url{https://bible-api.com/}. Accessed February 5, 2026.
+
+\bibitem{soundhelix-audio}
+SoundHelix. ``Audio Examples'' (MP3 samples).\
+\url{https://www.soundhelix.com/audio-examples}. Accessed February 5, 2026.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,4 @@
+date,event_text,event_type,severity,sentiment
+2024-01-02,Fed minutes emphasize higher-for-longer rates,macro,0.8,-0.2
+2024-01-03,Major AI product launch by large-cap tech,technology,0.6,0.4
+2024-01-04,Geopolitical tension impacts shipping lanes,geopolitics,0.9,-0.5

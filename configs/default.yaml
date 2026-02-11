@@ -1,0 +1,117 @@
+project:
+  seed: 42
+  deterministic: true
+  output_dir: outputs/runs
+  run_name_prefix: event_mvp
+  save_float_dtype: float32
+
+storage:
+  max_runs_to_keep: 5
+  save_predictions_parquet: true
+  save_explanations_parquet: true
+  write_run_manifest: true
+  manifest_dir: reports/run_manifests
+
+data:
+  start_date: "2018-01-01"
+  end_date: "2026-01-31"
+  universe: [SPY, QQQ, AAPL, MSFT, NVDA, AMZN, GOOGL, META, TSLA]
+  market_proxies: [SPY, QQQ]
+  prices_path: data/raw/prices.parquet
+  events:
+    backend: csv
+    csv_path: data/raw/events.csv
+    gdelt:
+      query: "(economy OR inflation OR war OR election OR rates OR oil)"
+      max_records_per_day: 250
+      request_sleep_sec: 0.4
+      cache_dir: data/raw/gdelt_cache
+  asset_names:
+    SPY: "SPDR S&P 500 ETF Trust"
+    QQQ: "Invesco QQQ Trust"
+    AAPL: "Apple Inc"
+    MSFT: "Microsoft Corporation"
+    NVDA: "NVIDIA Corporation"
+    AMZN: "Amazon.com Inc"
+    GOOGL: "Alphabet Inc Class A"
+    META: "Meta Platforms Inc"
+    TSLA: "Tesla Inc"
+
+features:
+  sequence_length: 20
+  market_rolling_windows: [5, 20]
+  asset_rolling_windows: [5, 20]
+  rsi_period: 14
+  clip_std: 6.0
+  include_calendar: true
+  windows:
+    - label: election_2024
+      start: "2024-10-01"
+      end: "2024-11-15"
+    - label: us_debt_ceiling_2023
+      start: "2023-05-01"
+      end: "2023-06-15"
+  periodic_terms:
+    - day_of_week
+    - day_of_year
+  calendar_shift_days_for_counterfactual: 10
+  event_embedding:
+    prefer_sentence_transformer: true
+    model_name: all-MiniLM-L6-v2
+    tfidf_max_features: 512
+    svd_dim: 32
+
+model:
+  d_model: 64
+  transformer_layers: 2
+  transformer_heads: 4
+  dropout: 0.2
+  num_worlds: 4
+  regime_dim: 8
+  num_regimes: 3
+  use_discrete_regime_head: true
+  asset_embedding_dim: 8
+  hidden_dim: 128
+  use_resonance: true
+  use_calendar: true
+
+training:
+  epochs: 20
+  batch_size: 128
+  lr: 0.001
+  weight_decay: 0.0001
+  huber_delta: 1.0
+  regime_loss_weight: 0.2
+  early_stopping_patience: 5
+  num_workers: 0
+  train_days: 756
+  val_days: 126
+  test_days: 126
+  step_days: 126
+  purge_days: 2
+  embargo_days: 2
+  min_train_samples: 500
+  device: cpu
+
+evaluation:
+  top_n: 2
+  allow_short: true
+  transaction_cost_bps: 5
+  annualization: 252
+
+ablation:
+  enabled: true
+  modes: [A_price_only, B_price_events, C_full]
+  quick_epochs: 8
+
+placebo:
+  enabled: true
+  quick_epochs: 4
+  random_seed: 17
+  tests: [shuffle_event_dates, shift_windows, random_name_embeddings]
+
+distillation:
+  enabled: true
+  alpha: 0.001
+  max_iter: 5000
+  cv_folds: 3
