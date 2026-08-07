@@ -1,0 +1,46 @@
+tier,company,ticker,industry_group,transmission_channel,tracking_priority,primary_external_signal
+1,OpenAI,,Frontier models and assistants,Direct model demand,Core,Census BTOS AI adoption
+1,Anthropic,,Frontier models and assistants,Direct model demand,Core,Census BTOS AI adoption
+1,xAI,,Frontier models and assistants,Direct model demand,Core,Census BTOS AI adoption
+1,Alphabet,GOOGL,Hyperscalers and AI platforms,Cloud and model distribution,Core,Hyperscaler capex and SEC filings
+1,Microsoft,MSFT,Hyperscalers and AI platforms,Cloud and model distribution,Core,Hyperscaler capex and SEC filings
+1,Meta Platforms,META,Hyperscalers and AI platforms,Model platform and internal compute,Core,Hyperscaler capex and SEC filings
+1,Amazon,AMZN,Hyperscalers and AI platforms,Cloud AI infrastructure and distribution,Core,Hyperscaler capex and SEC filings
+1,Palantir Technologies,PLTR,Enterprise AI software,Application-layer monetization,High,SEC filings and remaining deal value
+1,Salesforce,CRM,Enterprise AI software,Application-layer monetization,High,SEC filings and remaining performance obligations
+1,ServiceNow,NOW,Enterprise AI software,Application-layer monetization,High,SEC filings and remaining performance obligations
+1,Adobe,ADBE,Enterprise AI software,Creative AI monetization,Medium,SEC filings and subscription growth
+1,Oracle,ORCL,Enterprise AI software,Cloud and database AI workloads,High,SEC filings and cloud infrastructure growth
+1,Baidu,BIDU,China AI platforms,Models cloud and search AI,Medium,Company filings and cloud growth
+1,Alibaba Group,BABA,China AI platforms,Models cloud and commerce AI,Medium,Company filings and cloud growth
+1,SAP,SAP,Enterprise AI software,ERP and enterprise AI monetization,Medium,Company filings and cloud backlog
+2,NVIDIA,NVDA,AI compute and processors,Accelerator demand,Core,Hyperscaler capex and SEC filings
+2,Advanced Micro Devices,AMD,AI compute and processors,Accelerator and CPU demand,Core,Hyperscaler capex and SEC filings
+2,Broadcom,AVGO,Networking and custom silicon,Custom accelerators and network scale-out,Core,Hyperscaler capex and SEC filings
+2,Taiwan Semiconductor Manufacturing,TSM,Semiconductor foundry,Advanced-node fabrication demand,Core,Semiconductor production and company filings
+2,ASML Holding,ASML,Semiconductor equipment,EUV capacity expansion,High,Semiconductor investment and company filings
+2,Arm Holdings,ARM,AI compute and processors,CPU architecture demand,Medium,Cloud and edge compute growth
+2,Micron Technology,MU,Memory and storage,HBM and DRAM demand,Core,Memory pricing and company filings
+2,Marvell Technology,MRVL,Networking and custom silicon,Optical DSP and custom silicon,High,Hyperscaler capex and SEC filings
+2,Arista Networks,ANET,Networking and custom silicon,AI cluster Ethernet networking,Core,Hyperscaler capex and SEC filings
+2,Super Micro Computer,SMCI,AI servers and systems,GPU system deployment,High,Server demand and SEC filings
+2,Dell Technologies,DELL,AI servers and systems,Enterprise AI server deployment,High,Server backlog and SEC filings
+2,Hewlett Packard Enterprise,HPE,AI servers and systems,Enterprise and sovereign AI infrastructure,High,Server backlog and SEC filings
+2,Qualcomm,QCOM,AI compute and processors,Edge inference,Medium,Device shipments and SEC filings
+2,Intel,INTC,AI compute and processors,CPU accelerator and foundry demand,Medium,Data-center revenue and SEC filings
+2,Applied Materials,AMAT,Semiconductor equipment,Wafer-fab capital spending,High,Semiconductor investment and SEC filings
+3,Vertiv,VRT,Power distribution and thermal,Power delivery and liquid cooling,Core,Data-center construction and SEC filings
+3,Eaton,ETN,Power distribution and thermal,Switchgear and electrical distribution,Core,Data-center construction and SEC filings
+3,Quanta Services,PWR,Grid construction and transmission,Grid interconnection and transmission buildout,Core,EIA electricity demand and utility capex
+3,GE Vernova,GEV,Grid and generation equipment,Generation turbines and grid equipment,Core,EIA generation capacity and grid investment
+3,Constellation Energy,CEG,Power generation,Reliable electricity supply for data centers,Core,EIA electricity prices demand and generation
+3,Vistra,VST,Power generation,Reliable electricity supply for data centers,Core,EIA electricity prices demand and generation
+3,nVent Electric,NVT,Power distribution and thermal,Electrical connection and protection,High,Data-center construction and SEC filings
+3,Hubbell,HUBB,Power distribution and thermal,Utility and electrical distribution equipment,High,Utility capex and EIA demand
+3,Comfort Systems USA,FIX,Data-center construction and HVAC,Mechanical HVAC and cooling construction,Core,Construction backlog and SEC filings
+3,EMCOR Group,EME,Data-center construction and HVAC,Electrical and mechanical construction,Core,Construction backlog and SEC filings
+3,Corning,GLW,Optics and interconnects,Fiber connectivity,High,Data-center bandwidth demand and SEC filings
+3,Lumentum,LITE,Optics and interconnects,Optical components and transceivers,High,Cloud capex and SEC filings
+3,Coherent,COHR,Optics and interconnects,Photonics and optical communications,High,Cloud capex and SEC filings
+3,Amphenol,APH,Optics and interconnects,High-speed connectors and cabling,Core,Data-center capex and SEC filings
+3,Celestica,CLS,Data-center hardware manufacturing,Switching systems and advanced manufacturing,Core,Hyperscaler capex and company filings
