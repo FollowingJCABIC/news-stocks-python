@@ -1,0 +1,46 @@
+tier,tier_name,company,ticker,public_status,primary_ai_link,non_obviousness,notes
+1,Models assistants and AI software,OpenAI,,Private,Frontier models and ChatGPT,Low,Direct AI company; retained for competitive landscape despite no public ticker
+1,Models assistants and AI software,Anthropic,,Private,Claude frontier models and enterprise AI,Low,Direct AI company; private
+1,Models assistants and AI software,xAI,,Private,Frontier models and Grok,Low,Direct AI company; private
+1,Models assistants and AI software,Alphabet,GOOGL,Public,Gemini models cloud AI and AI products,Low,AI exposure spans models cloud search and infrastructure
+1,Models assistants and AI software,Microsoft,MSFT,Public,Copilot Azure AI and model distribution,Low,Major AI platform and enterprise distribution layer
+1,Models assistants and AI software,Meta Platforms,META,Public,Llama models recommendation systems and AI products,Low,Large internal compute and open-model ecosystem
+1,Models assistants and AI software,Amazon,AMZN,Public,AWS AI services Bedrock and model hosting,Medium,AI exposure sits inside a diversified cloud and commerce company
+1,Models assistants and AI software,Palantir Technologies,PLTR,Public,Enterprise AI software and AIP,Low,Application layer focused on enterprise and government workflows
+1,Models assistants and AI software,Salesforce,CRM,Public,Agentic enterprise software and AI CRM,Medium,Existing software distribution can monetize AI features
+1,Models assistants and AI software,ServiceNow,NOW,Public,Enterprise workflow AI and agents,Medium,AI embedded into workflow platform rather than sold as standalone model
+1,Models assistants and AI software,Adobe,ADBE,Public,Generative creative AI and Firefly,Medium,AI monetization through creative software ecosystem
+1,Models assistants and AI software,Oracle,ORCL,Public,Cloud infrastructure databases and enterprise AI,Medium,AI demand can flow through OCI and database workloads
+1,Models assistants and AI software,Baidu,BIDU,Public,ERNIE models search cloud and autonomous AI,Medium,Major Chinese model and AI platform company
+1,Models assistants and AI software,Alibaba Group,BABA,Public,Qwen models Alibaba Cloud and AI applications,Medium,AI exposure through models cloud and commerce ecosystem
+1,Models assistants and AI software,SAP,SAP,Public,Enterprise AI embedded in ERP and business software,High,Often thought of as legacy enterprise software rather than an AI beneficiary
+2,Core AI technology and infrastructure,NVIDIA,NVDA,Public,GPUs accelerators networking and AI systems,Low,Central supplier of AI compute
+2,Core AI technology and infrastructure,Advanced Micro Devices,AMD,Public,AI accelerators CPUs and data-center compute,Low,Direct compute competitor and supplier
+2,Core AI technology and infrastructure,Broadcom,AVGO,Public,Custom AI silicon networking and connectivity,Medium,AI exposure is broader than its historical semiconductor identity
+2,Core AI technology and infrastructure,Taiwan Semiconductor Manufacturing,TSM,Public,Leading-edge chip fabrication,Medium,Manufactures advanced chips designed by many AI leaders
+2,Core AI technology and infrastructure,ASML Holding,ASML,Public,EUV lithography for advanced semiconductors,High,Picks-and-shovels exposure several steps upstream from AI applications
+2,Core AI technology and infrastructure,Arm Holdings,ARM,Public,CPU architecture for cloud edge and AI systems,Medium,Architecture licensing rather than chip fabrication
+2,Core AI technology and infrastructure,Micron Technology,MU,Public,High-bandwidth memory and DRAM for accelerators,Medium,Memory bandwidth is a critical AI bottleneck
+2,Core AI technology and infrastructure,Marvell Technology,MRVL,Public,Data-center networking optical DSP and custom silicon,High,Important AI infrastructure supplier that is less visible than GPU vendors
+2,Core AI technology and infrastructure,Arista Networks,ANET,Public,High-speed Ethernet networking for AI clusters,Medium,Networking becomes increasingly important as clusters scale
+2,Core AI technology and infrastructure,Super Micro Computer,SMCI,Public,GPU servers and rack-scale AI systems,Medium,Systems integrator close to accelerator deployment
+2,Core AI technology and infrastructure,Dell Technologies,DELL,Public,Enterprise and AI servers storage and infrastructure,High,Traditional PC brand obscures growing AI infrastructure exposure
+2,Core AI technology and infrastructure,Hewlett Packard Enterprise,HPE,Public,AI servers networking and enterprise infrastructure,High,Legacy enterprise-hardware label can obscure AI cluster exposure
+2,Core AI technology and infrastructure,Qualcomm,QCOM,Public,Edge AI mobile and device inference,Medium,AI exposure is primarily inference at the edge rather than frontier training
+2,Core AI technology and infrastructure,Intel,INTC,Public,CPUs accelerators foundry and AI systems,Medium,Large potential exposure but execution and competitiveness must be analyzed separately
+2,Core AI technology and infrastructure,Applied Materials,AMAT,Public,Semiconductor manufacturing equipment,High,Upstream beneficiary of increased advanced-chip fabrication investment
+3,Second-order AI beneficiaries,Vertiv,VRT,Public,Data-center power thermal management and liquid cooling,High,One of the clearest physical-infrastructure beneficiaries of dense AI compute
+3,Second-order AI beneficiaries,Eaton,ETN,Public,Electrical distribution switchgear and power management,High,AI data centers require enormous electrical infrastructure
+3,Second-order AI beneficiaries,Quanta Services,PWR,Public,Grid transmission electrical infrastructure and construction,Very High,AI demand can reach the company through utility and data-center power buildout
+3,Second-order AI beneficiaries,GE Vernova,GEV,Public,Power generation grid equipment and electrification,Very High,AI is an electricity-demand story as well as a computing story
+3,Second-order AI beneficiaries,Constellation Energy,CEG,Public,Nuclear and low-carbon electricity generation,Very High,Data-center power demand can increase value of reliable around-the-clock generation
+3,Second-order AI beneficiaries,Vistra,VST,Public,Electricity generation and energy infrastructure,Very High,Potential beneficiary of rising data-center electricity demand
+3,Second-order AI beneficiaries,nVent Electric,NVT,Public,Electrical connection and protection systems,Very High,Enclosures and electrical infrastructure are necessary but rarely labeled AI
+3,Second-order AI beneficiaries,Hubbell,HUBB,Public,Electrical and utility infrastructure equipment,Very High,Grid expansion and power-distribution investment provide indirect exposure
+3,Second-order AI beneficiaries,Comfort Systems USA,FIX,Public,Mechanical electrical and HVAC construction,Very High,AI data centers require specialized cooling and mechanical construction
+3,Second-order AI beneficiaries,EMCOR Group,EME,Public,Electrical and mechanical construction services,Very High,Participates in complex mission-critical facility construction
+3,Second-order AI beneficiaries,Corning,GLW,Public,Fiber optic cabling and connectivity,High,AI clusters and data centers require high-bandwidth optical connectivity
+3,Second-order AI beneficiaries,Lumentum,LITE,Public,Optical and photonic components for communications,High,Optical interconnect growth can be driven by data-center bandwidth needs
+3,Second-order AI beneficiaries,Coherent,COHR,Public,Lasers photonics and optical communications components,High,Photonics is an increasingly important data-center scaling technology
+3,Second-order AI beneficiaries,Amphenol,APH,Public,High-speed connectors cables and interconnect systems,Very High,Connectors are mundane but critical as compute density and bandwidth rise
+3,Second-order AI beneficiaries,Celestica,CLS,Public,Data-center networking hardware and advanced manufacturing,Very High,Historically viewed as contract manufacturing but increasingly exposed to AI infrastructure
